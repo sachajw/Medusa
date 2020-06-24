@@ -10,8 +10,8 @@ services:
       - PGID=1000
       - TZ=Africa/Johannesburg
     volumes:
-      - path to data:/config
-      - path to downloads:/downloads
-      - path to tv shows:/tv
+      - /config:/config
+      - /media:/media/store-e-500/plex/media
+      - /media:/media/store-e-500/plex/media
     ports:
       - 8081:8081
