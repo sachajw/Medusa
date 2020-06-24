@@ -12,6 +12,5 @@ services:
     volumes:
       - /config:/config
       - /media:/media/store-e-500/plex/media
-      - /media:/media/store-e-500/plex/media
     ports:
       - 8081:8081
