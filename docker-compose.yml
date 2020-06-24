@@ -1,0 +1,17 @@
+version: "2.1"
+services:
+  medusa:
+    image: linuxserver/medusa:arm64v8-latest
+    container_name: medusa
+    network_mode: host
+    restart: always
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Africa/Johannesburg
+    volumes:
+      - path to data:/config
+      - path to downloads:/downloads
+      - path to tv shows:/tv
+    ports:
+      - 8081:8081
